@@ -1,3 +1,7 @@
 # Ignoring the Eclipse IDE files and directories
 .project
 .settings
+.classpath
+
+# Ignoring the Maven files and directories
+target
