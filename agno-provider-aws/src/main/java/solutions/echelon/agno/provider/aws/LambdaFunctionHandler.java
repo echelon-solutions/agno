@@ -4,6 +4,12 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 
 import solutions.echelon.agno.common.provider.FunctionProvider;
 
+/**
+ * Here's how to reference implemented handlers in 
+ *   the AWS Lambda configuration:
+ * 
+ * The format is <package>.<class>::handleRequest 
+ */
 public interface LambdaFunctionHandler<FunctionRequestType, FunctionResponseType>
     extends
         RequestHandler<FunctionRequestType, LambdaFunctionAPIGatewayResponse>,
